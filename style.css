@@ -1,1 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #142346;
+}
 
+.banner {
+  background: #142346;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner .logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.btn-gold {
+  background: #B49B3C;
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.full-img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.process-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 150px;
+  padding: 20px;
+}
+
+.step i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #B49B3C;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.pedido-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-blue {
+  background: #142346;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+}
+
+.quick-contact {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-mail {
+  background: #B49B3C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.footer {
+  background: #142346;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
