@@ -116,7 +116,18 @@ input, textarea, select {
   text-decoration: none;
 }
 
-.footer a {
+footer {
+background-color: #0a1a2f;
+text-align: center;
+padding: 20px;
+margin-top: 20px;
+}
+
+footer p {
+margin: 5px 0;
+}
+  
+footer a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
