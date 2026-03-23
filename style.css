@@ -116,10 +116,12 @@ input, textarea, select {
   text-decoration: none;
 }
 
-.footer {
-  background: #142346;
-  color: white;
-  padding: 25px;
-  text-align: center;
-  margin-top: 40px;
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #4fc3f7;
 }
