@@ -86,12 +86,15 @@ border: none;
 
 .form-grid button {
 grid-column: span 2;
-padding: 12px;
+padding: 18px;
+font-size: 18px;
 background-color: #4fc3f7;
 color: #000;
 font-weight: bold;
 border: none;
-border-radius: 8px;
+border-radius: 10px;
+cursor:pointer;
+width: 100%;  
 }
 
 input, textarea, select {
