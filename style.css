@@ -70,12 +70,28 @@ body {
   display: none;
 }
 
-.pedido-form {
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.form-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+padding: 20px;
+}
+
+.form-grid input,
+.form-grid select {
+padding: 10px;
+border-radius: 6px;
+border: none;
+}
+
+.form-grid button {
+grid-column: span 2;
+padding: 12px;
+background-color: #4fc3f7;
+color: #000;
+font-weight: bold;
+border: none;
+border-radius: 8px;
 }
 
 input, textarea, select {
