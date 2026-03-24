@@ -67,8 +67,11 @@
   <section class="section" id="pedido">
     <h2>Realiza tu Pedido</h2>
 
-    <form id="pedidoForm class="pedido-form">
-<input type="text" name="nombre" placeholder="Tu nombre" required>
+    <form id="pedidoForm class="form-grid">
+
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+<input type="text" name="direccion" placeholder="Dirección de entrega" required>
 
 <select name="producto">
     <option value="Garrafón 20L">Garrafón 20L</option>
@@ -77,14 +80,12 @@
 
 <input type="number" name="cantidad" placeholder="Cantidad" required>
 
-<label>¿Cuenta con garrafones?</label>
 <select name="garrafones">
-    <option value="Propios">Propios</option>
-    <option value="Préstamo">Préstamo</option>
-    <option value="Compra">Compra</option>
+    <option value="Propios">Garrafones propios</option>
+    <option value="Préstamo">Requiere préstamo</option>
+    <option value="Compra">Desea comprar</option>
 </select>
 
-<label>Tipo de garrafón</label>
 <select name="tipo">
     <option value="Epura">Epura</option>
     <option value="Ciel">Ciel</option>
@@ -92,7 +93,20 @@
     <option value="Genérico">Genérico</option>
 </select>
 
+<select name="horario">
+    <option value="Mañana">Entrega en la mañana</option>
+    <option value="Tarde">Entrega en la tarde</option>
+    <option value="Indistinto">Horario indistinto</option>
+</select>
+
+<select name="pago">
+    <option value="Efectivo">Efectivo</option>
+    <option value="Transferencia">Transferencia</option>
+</select>
+
 <button type="submit">Enviar pedido</button>
+
+      
     </form>
 
     <div class="quick-contact">
