@@ -12,6 +12,22 @@ body {
   padding: 60px 20px;
 }
 
+.btn-pedido {
+  margin-top: 15px;
+  padding: 14px;
+  background: #0b2a4a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-pedido:hover {
+  background: #0d3b66;
+}
 .banner .logo {
   width: 260px;
   margin-bottom: 15px;
@@ -68,38 +84,6 @@ body {
 .slide {
   width: 100%;
   display: none;
-}
-
-.form-list {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.form-list label {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #4fc3f7;
-}
-
-.form-list input,
-.form-list select {
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    margin-top: 5px;
-}
-
-.form-list button {
-    margin-top: 20px;
-    padding: 16px;
-    font-size: 18px;
-    background-color: #25D366;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 input, textarea, select {
