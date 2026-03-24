@@ -1,147 +1,52 @@
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #142346;
-}
-
-.banner {
-  background: #142346;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.btn-pedido {
-  margin-top: 15px;
-  padding: 14px;
   background: #0b2a4a;
   color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 100%;
 }
 
-.btn-pedido:hover {
-  background: #0d3b66;
-}
-.banner .logo {
-  width: 260px;
-  margin-bottom: 15px;
-}
-
-.btn-gold {
-  background: #B49B3C;
-  color: white;
-  padding: 12px 20px;
-  display: inline-block;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.section {
-  padding: 40px 20px;
+/* Hero /
+.hero {
   text-align: center;
+  padding: 40px 20px 20px;
 }
 
-.full-img {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 10px;
+.logo-principal {
+  width: 180px;
+  margin-bottom: 10px;
 }
 
-.process-grid {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+.lema {
+  font-size: 14px;
+  opacity: 0.8;
 }
 
-.step {
-  width: 150px;
+/ Grid tipo app /
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
   padding: 20px;
 }
 
-.step i {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #B49B3C;
-}
-
-.carousel {
-  width: 100%;
-  max-width: 550px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
+/ Tarjetas */
+.card {
+  background: #08213a;
+  text-align: center;
+  padding: 20px;
   border-radius: 15px;
-}
-
-.slide {
-  width: 100%;
-  display: none;
-}
-
-input, textarea, select {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.btn-blue {
-  background: #142346;
-  color: white;
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-  font-size: 18px;
-}
-
-.quick-contact {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn-whatsapp {
-  background: #25D366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
   text-decoration: none;
-}
-
-.btn-mail {
-  background: #B49B3C;
   color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-footer {
-background-color: #0a1a2f;
-color:white;
-text-align: center;
-padding: 20px;
-margin-top: 20px;
+.card span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 8px;
 }
 
-footer p {
-margin: 5px 0;
-}
-  
-footer a {
-    color: white !important;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #4fc3f7;
-}
+.card:hover {
+  background: #0d3b66;
+  transform: scale(1.05);
