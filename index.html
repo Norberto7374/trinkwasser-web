@@ -67,25 +67,31 @@
   <section class="section" id="pedido">
     <h2>Realiza tu Pedido</h2>
 
-    <form id="pedidoForm class="form-grid">
+    <form id="pedidoForm class="form-list">
 
-    <input type="text" name="nombre" placeholder="Nombre completo" required>
+   <label>Nombre</label>
+<input type="text" name="nombre" placeholder="Tu nombre" required>
 
+<label>Dirección</label>
 <input type="text" name="direccion" placeholder="Dirección de entrega" required>
 
+<label>Producto</label>
 <select name="producto">
     <option value="Garrafón 20L">Garrafón 20L</option>
     <option value="Garrafón 10L">Garrafón 10L</option>
 </select>
 
+<label>Cantidad</label>
 <input type="number" name="cantidad" placeholder="Cantidad" required>
 
+<label>¿Cuenta con garrafones?</label>
 <select name="garrafones">
-    <option value="Propios">Garrafones propios</option>
-    <option value="Préstamo">Requiere préstamo</option>
-    <option value="Compra">Desea comprar</option>
+    <option value="Propios">Propios</option>
+    <option value="Préstamo">Préstamo</option>
+    <option value="Compra">Compra</option>
 </select>
 
+<label>Tipo de garrafón</label>
 <select name="tipo">
     <option value="Epura">Epura</option>
     <option value="Ciel">Ciel</option>
@@ -93,12 +99,14 @@
     <option value="Genérico">Genérico</option>
 </select>
 
+<label>Horario de entrega</label>
 <select name="horario">
-    <option value="Mañana">Entrega en la mañana</option>
-    <option value="Tarde">Entrega en la tarde</option>
-    <option value="Indistinto">Horario indistinto</option>
+    <option value="Mañana">Mañana</option>
+    <option value="Tarde">Tarde</option>
+    <option value="Indistinto">Indistinto</option>
 </select>
 
+<label>Forma de pago</label>
 <select name="pago">
     <option value="Efectivo">Efectivo</option>
     <option value="Transferencia">Transferencia</option>
