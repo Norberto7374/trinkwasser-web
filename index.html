@@ -67,7 +67,7 @@
   <section class="section" id="pedido">
     <h2>Realiza tu Pedido</h2>
 
-    <form action="https://formspree.io/f/xxxxxx" method="POST" class="pedido-form">
+    <form id="pedidoForm class="pedido-form">
       <input type="text" name="nombre" placeholder="Nombre completo" required />
       <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required />
       <textarea name="direccion" placeholder="Dirección de entrega" required></textarea>
@@ -83,6 +83,13 @@
         <option value="compra">Deseo comprar garrafones</option>
       </select>
 
+      <select name="tipo garrafon" required>
+        <option value="epura">Cuento con garrafones</option>
+        <option value="ciel">Cuento con garrafones</option>
+        <option value="bonafont">Cuento con garrafones</option>
+        <option value="genericos">Cuento con garrafones</option>
+      </select>
+    
       <button type="submit" class="btn-blue">Enviar Pedido</button>
     </form>
 
