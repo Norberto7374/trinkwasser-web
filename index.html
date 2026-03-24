@@ -68,29 +68,31 @@
     <h2>Realiza tu Pedido</h2>
 
     <form id="pedidoForm class="pedido-form">
-      <input type="text" name="nombre" placeholder="Nombre completo" required />
-      <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required />
-      <textarea name="direccion" placeholder="Dirección de entrega" required></textarea>
+<input type="text" name="nombre" placeholder="Tu nombre" required>
 
-      <select name="producto" required>
-        <option value="20L">Garrafón 20L</option>
-        <option value="10L">Garrafón 10L</option>
-      </select>
+<select name="producto">
+    <option value="Garrafón 20L">Garrafón 20L</option>
+    <option value="Garrafón 10L">Garrafón 10L</option>
+</select>
 
-      <select name="garrafones" required>
-        <option value="propios">Cuento con garrafones propios</option>
-        <option value="prestamo">Requiero garrafones en préstamo</option>
-        <option value="compra">Deseo comprar garrafones</option>
-      </select>
+<input type="number" name="cantidad" placeholder="Cantidad" required>
 
-      <select name="tipo garrafon" required>
-        <option value="epura">Cuento con garrafones</option>
-        <option value="ciel">Cuento con garrafones</option>
-        <option value="bonafont">Cuento con garrafones</option>
-        <option value="genericos">Cuento con garrafones</option>
-      </select>
-    
-      <button type="submit" class="btn-blue">Enviar Pedido</button>
+<label>¿Cuenta con garrafones?</label>
+<select name="garrafones">
+    <option value="Propios">Propios</option>
+    <option value="Préstamo">Préstamo</option>
+    <option value="Compra">Compra</option>
+</select>
+
+<label>Tipo de garrafón</label>
+<select name="tipo">
+    <option value="Epura">Epura</option>
+    <option value="Ciel">Ciel</option>
+    <option value="Bonafont">Bonafont</option>
+    <option value="Genérico">Genérico</option>
+</select>
+
+<button type="submit">Enviar pedido</button>
     </form>
 
     <div class="quick-contact">
