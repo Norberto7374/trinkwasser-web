@@ -27,7 +27,7 @@ Pago: ${pago}`;
 
     
 
-        const telefono = "525554356827";
+        const telefono = "5215554356827";
 
         window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
 
