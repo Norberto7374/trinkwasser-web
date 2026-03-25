@@ -1,3 +1,25 @@
+.hero {
+  text-align: center;
+  background: #0b2a4a;
+  color: white;
+  padding: 40px 20px;
+}
+
+.logo-principal {
+  max-width: 220px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.lema {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
 /* ===== PEDIDO PAGE ===== */
 
 body.pedido-page {
