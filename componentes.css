@@ -1,1 +1,23 @@
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 30px auto;
+  max-width: 600px;
+}
 
+.menu a {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #0b2a4a;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #0b2a4a;
+  color: white;
+}
