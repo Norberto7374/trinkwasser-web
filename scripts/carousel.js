@@ -1,14 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let index = 0;
   const slides = document.querySelectorAll(".slide");
 
+  if (slides.length === 0) return;
+
+  let index = 0;
+
   function showSlide() {
-    slides.forEach((s, i) => {
-      s.style.display = i === index ? "block" : "none";
+    slides.forEach((slide) => {
+      slide.style.display = "none";
     });
-    index = (index + 1) % slides.length;
+
+    slides[index].style.display = "block";
+
+    index++;
+    if (index >= slides.length) {
+      index = 0;
+    }
   }
 
   showSlide();
-  setInterval(showSlide, 4000);
+  setInterval(showSlide, 3000);
 });
