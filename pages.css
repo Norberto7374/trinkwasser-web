@@ -7,14 +7,14 @@ body.pedido-page {
   align-items: center;
 }
 
-/ Logo /
+/* Logo */
 .pedido-page .logo {
   display: block;
   margin: 30px auto 10px;
   max-width: 500px;
 }
 
-/ Card */
+/* Card */
 .pedido-page .section {
   background: white;
   width: 90%;
@@ -45,6 +45,7 @@ body.pedido-page {
   font-size: 15px;
 }
 
+/* CAROUSEL */
 .carousel {
   position: relative;
   max-width: 600px;
