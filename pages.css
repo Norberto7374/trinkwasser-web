@@ -46,9 +46,6 @@ body.pedido-page {
 }
 
 /* BOTÓN PEDIDO WHATSAPP */
-.btn-pedido {
-  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-}
 
 .btn-pedido {
   width: 100%;
@@ -64,7 +61,6 @@ body.pedido-page {
   transition: all 0.3s ease;
 }
 
-
 /* Hover */
 .btn-pedido:hover {
   background: #1ebe5d;
@@ -74,6 +70,25 @@ body.pedido-page {
 /* Click */
 .btn-pedido:active {
   transform: scale(0.98);
+}
+
+.btn-pedido {
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-pedido {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* CAROUSEL */
