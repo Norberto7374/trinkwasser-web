@@ -1,1 +1,30 @@
+"}
+.menu-app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px 20px;
+  max-width: 500px;
+  margin: auto;
+}
 
+.menu-item {
+  background: white;
+  border-radius: 15px;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #0b2a4a;
+  font-size: 28px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.menu-item span {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
