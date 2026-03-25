@@ -7,6 +7,12 @@
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .menu-app {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .menu-item {
   background: white;
   border-radius: 15px;
