@@ -99,13 +99,9 @@ body.pedido-page {
 }
 
 .slide {
-  display: none;
   width: 100%;
   border-radius: 15px;
-}
-
-.slide.active {
-  display: block;
+  display: none;
 }
 
 /* IMAGEN COMPARATIVO */
