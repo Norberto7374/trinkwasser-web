@@ -47,6 +47,10 @@ body.pedido-page {
 
 /* BOTÓN PEDIDO WHATSAPP */
 .btn-pedido {
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-pedido {
   width: 100%;
   padding: 16px;
   font-size: 16px;
