@@ -1,1 +1,46 @@
+/* ===== PEDIDO PAGE ===== /
 
+body.pedido-page {
+  background: #0b2a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/ Logo /
+.pedido-page .logo {
+  display: block;
+  margin: 30px auto 10px;
+  max-width: 500px;
+}
+
+/ Card */
+.pedido-page .section {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.pedido-page .pedido-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pedido-page .pedido-form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pedido-page .pedido-form input,
+.pedido-page .pedido-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
