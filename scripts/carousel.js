@@ -6,16 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let index = 0;
 
   function showSlide() {
-    slides.forEach((slide) => {
-      slide.style.display = "none";
-    });
+    slides.forEach(slide => slide.classList.remove("active"));
 
-    slides[index].style.display = "block";
+    slides[index].classList.add("active");
 
     index++;
-    if (index >= slides.length) {
-      index = 0;
-    }
+    if (index >= slides.length) index = 0;
   }
 
   showSlide();
