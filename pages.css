@@ -110,8 +110,8 @@ body.pedido-page {
 
 /* IMAGEN COMPARATIVO */
 .comparativo-img {
-  width: 100%;
-  max-width: 400px !important;
+  width: auto;
+  max-width: 400px;
   margin: 20px auto;
   display: block;
   border-radius: 12px;
