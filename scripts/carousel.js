@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let index = 0;
 
   function showSlide() {
-    slides.forEach(slide => slide.classList.remove("active"));
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
 
-    slides[index].classList.add("active");
+    slides[index].style.display = "block";
 
     index++;
     if (index >= slides.length) index = 0;
