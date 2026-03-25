@@ -29,3 +29,25 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
+
+footer {
+background-color: #0a1a2f;
+color:white;
+text-align: center;
+padding: 20px;
+margin-top: 20px;
+}
+
+footer p {
+margin: 5px 0;
+}
+  
+footer a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #4fc3f7;
+}
