@@ -97,3 +97,15 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+"}
+.normas li,
+.procesos li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.compromiso {
+  background: #0b2a4a;
+  color: white;
+  text-align: center;
