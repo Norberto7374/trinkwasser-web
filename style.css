@@ -50,3 +50,50 @@ body {
 .card:hover {
   background: #0d3b66;
   transform: scale(1.05);
+}
+  
+.info-card {
+  background: white;
+  color: #333;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.info-card h2 {
+  color: #0b2a4a;
+  margin-bottom: 10px;
+}
+
+/* Valores en grid /
+.valores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.valor {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.valor span {
+  font-size: 24px;
+}
+
+/ Lema /
+.lema-final {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/ Responsive */
+@media (max-width: 600px) {
+  .valores {
+    grid-template-columns: 1fr;
+  }
+}
