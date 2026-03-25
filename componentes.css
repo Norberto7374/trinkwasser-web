@@ -21,3 +21,33 @@
   font-size: 14px;
 }
 
+/* BOTÓN FLOTANTE HOME */
+.btn-home {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 55px;
+  height: 55px;
+  background: #0b2a4a;
+  color: white;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+/* Hover */
+.btn-home:hover {
+  background: #164d80;
+  transform: scale(1.1);
+}
+
+/* Click */
+.btn-home:active {
+  transform: scale(0.95);
+}
