@@ -107,7 +107,7 @@ body.pedido-page {
 /* IMAGEN COMPARATIVO */
 .section .comparativo-img {
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
   display: block;
   margin: 20px auto;
   border-radius: 12px;
