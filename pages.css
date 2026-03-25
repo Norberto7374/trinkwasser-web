@@ -109,10 +109,11 @@ body.pedido-page {
 }
 
 /* IMAGEN COMPARATIVO */
-.comparativo-img {
-  width: auto;
-  max-width: 400px;
-  margin: 20px auto;
+.section .comparativo-img {
+  width: auto !important;
+  max-width: 400px !important;
   display: block;
+  margin: 20px auto;
   border-radius: 12px;
 }
+
