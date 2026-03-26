@@ -30,7 +30,7 @@
   height: 55px;
   background: #0b2a4a;
   color: white;
-  font-size: 26px;
+  font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +38,6 @@
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   z-index: 1000;
-  transition: 0.3s;
 }
 
 /* Hover */
