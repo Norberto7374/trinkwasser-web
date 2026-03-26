@@ -152,6 +152,7 @@ body.pedido-page {
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  overflow-y: visible;
   padding: 20px;
 }
 
@@ -184,3 +185,8 @@ body.pedido-page {
   font-size: 13px;
 }
 
+.img-card:hover img {
+  transform: scale(1.5);
+  z-index: 10;
+  position: relative;
+}
