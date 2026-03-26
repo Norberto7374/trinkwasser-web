@@ -135,3 +135,28 @@ body.pedido-page {
   border-radius: 12px;
 }
 
+/* GALERÍA HORIZONTAL */
+.galeria-proceso {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+/* IMÁGENES */
+.galeria-proceso img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  transition: 0.3s;
+}
+
+/* HOVER (solo escritorio) */
+.galeria-proceso img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
