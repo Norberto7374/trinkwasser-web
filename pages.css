@@ -164,3 +164,43 @@ body.pedido-page {
 .galeria-proceso::-webkit-scrollbar {
   display: none;
 }
+.galeria-proceso {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 15px;
+}
+
+.img-card {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden; /* 👈 clave */
+}
+
+.img-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* EFECTO HOVER */
+.img-card:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* ETIQUETA */
+.img-label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  text-align: center;
+}
