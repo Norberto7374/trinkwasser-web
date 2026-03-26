@@ -56,16 +56,16 @@
   margin: 20px;
 }
 
-/* BOTÓN WHATSAPP */
-.btn-whatsapp {
+/* BOTÓN FLOTANTE PEDIDO */
+.btn-pedido-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 60px;
   height: 60px;
-  background: #25D366;
+  background: #25D366; /* estilo WhatsApp */
   color: white;
-  font-size: 28px;
+  font-size: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,12 +77,12 @@
 }
 
 /* Hover */
-.btn-whatsapp:hover {
+.btn-pedido-float:hover {
   transform: scale(1.1);
 }
 
 /* Click */
-.btn-whatsapp:active {
+.btn-pedido-float:active {
   transform: scale(0.95);
 }
 
