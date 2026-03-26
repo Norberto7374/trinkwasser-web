@@ -178,8 +178,8 @@ body.pedido-page {
 }
 
 .img-card img {
-  width: 140px;
-  height: 140px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
