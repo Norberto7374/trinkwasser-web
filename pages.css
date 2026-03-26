@@ -160,3 +160,7 @@ body.pedido-page {
   transform: scale(1.2);
   z-index: 2;
 }
+
+.galeria-proceso::-webkit-scrollbar {
+  display: none;
+}
