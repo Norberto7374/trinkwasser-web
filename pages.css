@@ -5,6 +5,11 @@
   padding: 40px 20px;
 }
 
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
 .logo-principal {
   max-width: 220px;
   margin-bottom: 10px;
