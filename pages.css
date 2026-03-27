@@ -88,13 +88,13 @@ body.pedido-page {
   transition: all 0.3s ease;
 }
 
-/* Hover */
+ Hover 
 .btn-pedido:hover {
   background: #1ebe5d;
   transform: scale(1.02);
 }
 
-/* Click */
+ Click 
 .btn-pedido:active {
   transform: scale(0.98);
 }
