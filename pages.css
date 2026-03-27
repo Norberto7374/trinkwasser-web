@@ -72,53 +72,6 @@ body.pedido-page {
   font-size: 15px;
 }
 
-/* BOTÓN PEDIDO WHATSAPP
-
-.btn-pedido {
-  width: 100%;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: bold;
-  background: #25D366;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: all 0.3s ease;
-}
-
- Hover 
-.btn-pedido:hover {
-  background: #1ebe5d;
-  transform: scale(1.02);
-}
-
- Click 
-.btn-pedido:active {
-  transform: scale(0.98);
-}
-
-.btn-pedido {
-  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-}
-
-.btn-pedido {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-*/
-
 /* CAROUSEL */
 .carousel {
   position: relative;
