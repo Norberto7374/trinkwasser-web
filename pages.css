@@ -149,3 +149,62 @@ body.pedido-page {
   z-index: 10;
   position: relative;
 }
+
+/* COBERTURA */
+.cobertura {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.zonas {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.zonas li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.expansion {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f2f6fa;
+  border-radius: 10px;
+}
+
+.mapa {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
+
+/* BOTONES CTA */
+.btn-cta {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  transform: scale(1.05);
+}
+
+.btn-sec {
+  display: inline-block;
+  background: #0b2a4a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
