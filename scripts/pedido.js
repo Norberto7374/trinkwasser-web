@@ -24,3 +24,9 @@ Pago: ${pago}`;
 
   window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
 });
+
+const zonasActivas = [
+  "54080",
+  "53140",
+  "02480"
+];
