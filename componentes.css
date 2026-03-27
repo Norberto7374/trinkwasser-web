@@ -28,7 +28,7 @@
   left: 20px;
   width: 55px;
   height: 55px;
-  background: #0b2a4a;
+  background: red /* #0b2a4a */;
   color: white;
   font-size: 22px;
   display: flex;
