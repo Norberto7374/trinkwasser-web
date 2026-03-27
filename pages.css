@@ -208,3 +208,9 @@ body.pedido-page {
   border-radius: 10px;
   text-decoration: none;
 }
+
+.disabled {
+  background: #ccc !important;
+  pointer-events: none;
+  opacity: 0.6;
+}
