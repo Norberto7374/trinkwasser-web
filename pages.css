@@ -214,3 +214,26 @@ body.pedido-page {
   pointer-events: none;
   opacity: 0.6;
 }
+
+#mensaje-cp {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#cp {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.disabled {
+  background: #ccc !important;
+  pointer-events: none;
+  opacity: 0.6;
+}
