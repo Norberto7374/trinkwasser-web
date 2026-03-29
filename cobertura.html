@@ -9,17 +9,21 @@
   <link rel="stylesheet" href="layout.css"> 
   <link rel="stylesheet" href="componentes.css">
   <link rel="stylesheet" href="pages.css">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Cobertura y Entregas Programadas</h1>
   <p>Optimizamos nuestras entregas por zona para garantizar un servicio puntual, eficiente y de alta calidad.</p>
 </section>
 
+<!-- INFO -->
 <section class="section cobertura">
-
   <p>
     En Trinkwasser operamos mediante un sistema de entregas programadas por zona, asegurando disponibilidad y servicio confiable.
   </p>
@@ -36,25 +40,22 @@
       Abrimos nuevas zonas conforme se integran clientes en la misma área.
     </p>
   </div>
-
 </section>
 
-<!-- MAPA (Google Maps) -->
+<!-- MAPA -->
 <section class="section">
   <h2>Zona de Cobertura</h2>
 
-  <div class="mapa">
-    <iframe 
-      src="https://www.google.com/maps?q=Ciudad%20de%20Mexico&output=embed"
-      width="100%" 
-      height="300" 
-      style="border:0; border-radius:15px;"
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
-</section>  
+  <iframe 
+    src="https://www.google.com/maps?q=Ciudad%20de%20Mexico&output=embed"
+    width="100%" 
+    height="300" 
+    style="border:0; border-radius:15px;"
+    loading="lazy">
+  </iframe>
+</section>
 
+<!-- VALIDACIÓN CP -->
 <section class="section cobertura">
 
   <h2>Verifica tu cobertura</h2>
@@ -69,36 +70,14 @@
   </a>
 
 </section>
-  
-<a href="index.html" class="btn-home">🏠</a>
-  <section class="section">
-  <h2>Verifica tu cobertura</h2>
 
-  <input type="text" id="cp" placeholder="Ingresa tu código postal">
+<!-- BOTÓN HOME -->
+<a href="index.html" class="btn-home">
+  <i class="fa-solid fa-house"></i>
+</a>
 
-  <section class="section">
-  <h3>Cobertura aproximada</h3>
-
-  <iframe 
-    src="https://www.google.com/maps?q=Estado%20de%20Mexico&output=embed"
-    width="100%" 
-    height="300" 
-    style="border:0; border-radius:15px;"
-    loading="lazy">
-  </iframe>
-</section>
-    
-  <p id="mensaje-cp"></p>
-
-  <a id="btn-agendar" class="btn-cta disabled" target="_blank">
-    📅 Agendar entrega en mi zona
-  </a>
-
-  </section>
-
-</section>
-
+<!-- JS -->
 <script src="scripts/coberturas.js"></script>
-  
+
 </body>
 </html>
