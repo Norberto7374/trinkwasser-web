@@ -215,6 +215,8 @@ body.pedido-page {
   opacity: 0.6;
 }
 
+/* ===== COBERTURA PAGE ===== */
+
 #mensaje-cp {
   margin-top: 10px;
   font-size: 14px;
@@ -237,3 +239,4 @@ body.pedido-page {
   pointer-events: none;
   opacity: 0.6;
 }
+
