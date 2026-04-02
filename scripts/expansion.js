@@ -17,7 +17,7 @@ document.getElementById("expansionForm").addEventListener("submit", function(e) 
   // 🔥 CODIFICACIÓN CLAVE
   const mensajeCodificado = encodeURIComponent(mensaje);
 
-  const url = `https://wa.me/525554144400?text=${mensajeCodificado}`;
+  const url = `https://wa.me/5215670144747?text=${mensajeCodificado}`;
 
   window.open(url, "_blank");
 });
