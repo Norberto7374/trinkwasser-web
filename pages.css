@@ -240,3 +240,21 @@ body.pedido-page {
   opacity: 0.6;
 }
 
+.producto-item {
+  display: flex;
+  gap: 10px;
+}
+
+.producto-item select,
+.producto-item input {
+  flex: 1;
+}
+
+.btn-secundario {
+  margin-top: 10px;
+  padding: 10px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
