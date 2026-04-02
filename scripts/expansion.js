@@ -1,10 +1,3 @@
-const params = new URLSearchParams(window.location.search);
-const cp = params.get("cp");
-
-if (cp) {
-  document.getElementById("direccion").value = `CP ${cp}`;
-}
-
 document.getElementById("expansionForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -13,14 +6,18 @@ document.getElementById("expansionForm").addEventListener("submit", function(e) 
   const consumo = document.getElementById("consumo").value;
   const frecuencia = document.getElementById("frecuencia").value;
 
-  const mensaje = `Hola, me interesa abrir cobertura:
+  // 🔥 MENSAJE BIEN FORMATEADO
+  const mensaje = `Hola, me interesa abrir cobertura en mi zona:
 
 👤 Nombre: ${nombre}
 📍 Dirección: ${direccion}
-💧 Consumo estimado: ${consumo} garrafones
+💧 Consumo estimado: ${consumo} garrafones por semana
 📅 Frecuencia: ${frecuencia}`;
 
-  const url = `https://wa.me/5215670144747?=${encodeURIComponent(mensaje)}`;
+  // 🔥 CODIFICACIÓN CLAVE
+  const mensajeCodificado = encodeURIComponent(mensaje);
+
+  const url = `https://wa.me/525554144400?text=${mensajeCodificado}`;
 
   window.open(url, "_blank");
 });
