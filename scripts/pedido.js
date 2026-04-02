@@ -55,3 +55,20 @@ Quedo atento a la confirmación de entrega.`;
 
   window.open(url, "_blank");
 });
+
+document.getElementById("agregar-producto").addEventListener("click", () => {
+  const container = document.getElementById("productos-container");
+
+  const nuevo = document.createElement("div");
+  nuevo.classList.add("producto-item");
+
+  nuevo.innerHTML = `
+    <select class="producto">
+      <option>Garrafón 20L</option>
+      <option>Garrafón 10L</option>
+    </select>
+    <input type="number" class="cantidad" placeholder="Cantidad">
+  `;
+
+  container.appendChild(nuevo);
+});
