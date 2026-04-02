@@ -1,3 +1,11 @@
+const params = new URLSearchParams(window.location.search);
+const cp = params.get("cp");
+
+// Insertar CP en el campo
+if (cp) {
+  document.getElementById("cp").value = cp;
+}
+
 <label>Código Postal</label>
 <input type="text" id="cp" readonly>
 
