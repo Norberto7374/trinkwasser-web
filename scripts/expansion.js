@@ -6,9 +6,6 @@ if (cp) {
   document.getElementById("cp").value = cp;
 }
 
-<label>Código Postal</label>
-<input type="text" id="cp" readonly>
-
 document.getElementById("expansionForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
