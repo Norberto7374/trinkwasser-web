@@ -16,32 +16,6 @@ cpInput.addEventListener("input", () => {
 
   btn.classList.remove("disabled");
 
-  if (zonasActivas.includes(cp)) {
-    // ✅ Zona activa
-    mensaje.innerText = "✅ Tenemos entregas programadas en tu zona";
-
-    btn.innerHTML = `<i class="fa-solid fa-calendar-check"></i> Agendar entrega en mi zona`;
-
-    btn.href = generarMensajeZona(cp);
-
-  } else {
-    // 🔄 Zona nueva
-    mensaje.innerText = "📍 Aún no tenemos ruta activa, pero podemos abrir cobertura";
-
-    btn.innerHTML = `<i class="fa-solid fa-location-dot"></i> Solicitar apertura de ruta`;
-
-    btn.href = generarMensajeNuevaZona(cp);
-  }
-});
-
-function generarMensajeZona(cp) {
-  return `https://wa.me/525554144400?text=Hola,%20quiero%20agendar%20una%20entrega%20de%20agua%20Trinkwasser.%0A📍%20CP:%20${cp}%0A💧%20Consumo:%20____%0A🏢%20Tipo:%20casa%20o%20negocio`;
-}
-
-function generarMensajeNuevaZona(cp) {
-  return `https://wa.me/525554144400?text=Hola,%20me%20interesa%20el%20servicio%20de%20agua%20Trinkwasser.%0A📍%20CP:%20${cp}%0A💧%20Consumo:%20____%0A🏢%20Tipo:%20casa%20o%20negocio%0AMe%20gustaría%20saber%20si%20pueden%20abrir%20ruta%20en%20mi%20zona`;
-}
-
 if (zonasActivas.includes(cp)) {
   mensaje.innerText = "✅ Tenemos cobertura en tu zona";
   btn.classList.remove("disabled");
