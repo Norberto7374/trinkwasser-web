@@ -18,8 +18,19 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
 
   const nombre = document.getElementById("nombre").value;
   const direccion = document.getElementById("direccion").value;
-  const producto = document.getElementById("producto").value;
-  const cantidad = document.getElementById("cantidad").value;
+  const productos = document.querySelectorAll(".producto-item");
+
+let listaProductos = "";
+
+productos.forEach(item => {
+  const producto = item.querySelector(".producto").value;
+  const cantidad = item.querySelector(".cantidad").value;
+
+  if (cantidad && cantidad > 0) {
+    listaProductos += `• ${producto}: ${cantidad}\n`;
+  }
+});
+  
   const garrafones = document.getElementById("garrafones").value;
   const tipo = document.getElementById("tipo").value;
   const horario = document.getElementById("horario").value;
