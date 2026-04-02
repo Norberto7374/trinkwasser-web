@@ -16,10 +16,6 @@ document.getElementById("expansionForm").addEventListener("submit", function(e) 
   const cp = document.getElementById("cp").value;
   const mensaje = `Hola, me interesa el servicio de agua Trinkwasser.
 
-document.getElementById("expansionForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  // 🔥 MENSAJE BIEN FORMATEADO
 📍 *Ubicación:*
 CP: ${cp}
 Dirección: ${direccion}
