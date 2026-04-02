@@ -36,6 +36,7 @@ productos.forEach(item => {
   const horario = document.getElementById("horario").value;
   const pago = document.getElementById("pago").value;
 
+  const pedidoID = "TW-" + Date.now().toString().slice(-6);
   // 🔥 MENSAJE PROFESIONAL (MISMO ESTILO QUE EXPANSIÓN)
   const mensaje = `Hola, quiero realizar un pedido de agua Trinkwasser.
 
