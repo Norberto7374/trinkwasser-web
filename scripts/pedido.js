@@ -1,11 +1,18 @@
+// ============================
+// OBTENER CP DESDE COBERTURA
+// ============================
 const params = new URLSearchParams(window.location.search);
 const cp = params.get("cp");
 
+// Insertar CP en dirección
 if (cp) {
-  const direccion = document.getElementById("direccion");
-  direccion.value = `CP ${cp}`;
+  const direccionInput = document.getElementById("direccion");
+  direccionInput.value = `CP ${cp}`;
 }
 
+// ============================
+// ENVÍO A WHATSAPP
+// ============================
 document.getElementById("pedidoForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -18,27 +25,33 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
   const horario = document.getElementById("horario").value;
   const pago = document.getElementById("pago").value;
 
-  const mensaje = `Hola, quiero hacer un pedido:%0A
-Nombre: ${nombre}%0A
-Dirección: ${direccion}%0A
-Producto: ${producto}%0A
-Cantidad: ${cantidad}%0A
-Garrafones: ${garrafones}%0A
-Tipo: ${tipo}%0A
-Horario: ${horario}%0A
-Pago: ${pago}`;
+  // 🔥 MENSAJE PROFESIONAL (MISMO ESTILO QUE EXPANSIÓN)
+  const mensaje = `Hola, quiero realizar un pedido de agua Trinkwasser.
 
-  const telefono = "5215670144747"; 
+📍 *Ubicación:*
+${direccion}
 
-  window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
+👤 *Datos del cliente:*
+Nombre: ${nombre}
+
+💧 *Detalle del pedido:*
+Producto: ${producto}
+Cantidad: ${cantidad}
+Garrafones: ${garrafones}
+Tipo: ${tipo}
+
+⏰ *Entrega:*
+Horario: ${horario}
+
+💳 *Forma de pago:*
+${pago}
+
+Quedo atento a la confirmación de entrega.`;
+
+  const telefono = "5215670144747";
+
+  // 🔥 CODIFICACIÓN CORRECTA
+  const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
 });
-
-
-
-const zonasActivas = [
-  "54080",
-  "53140",
-  "02480"
-];
-
-document.getElementById("cp").value = cp;
