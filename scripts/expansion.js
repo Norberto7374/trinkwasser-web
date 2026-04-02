@@ -20,7 +20,7 @@ document.getElementById("expansionForm").addEventListener("submit", function(e) 
 💧 Consumo estimado: ${consumo} garrafones
 📅 Frecuencia: ${frecuencia}`;
 
-  const url = `https://wa.me/525554144400?text=${encodeURIComponent(mensaje)}`;
+  const url = `https://wa.me/5215670144747?=${encodeURIComponent(mensaje)}`;
 
   window.open(url, "_blank");
 });
