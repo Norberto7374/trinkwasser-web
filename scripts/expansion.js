@@ -13,8 +13,34 @@ document.getElementById("expansionForm").addEventListener("submit", function(e) 
   const direccion = document.getElementById("direccion").value;
   const consumo = document.getElementById("consumo").value;
   const frecuencia = document.getElementById("frecuencia").value;
+  const cp = document.getElementById("cp").value;
+  const mensaje = `Hola, me interesa el servicio de agua Trinkwasser.
+
+document.getElementById("expansionForm").addEventListener("submit", function(e) {
+  e.preventDefault();
 
   // 🔥 MENSAJE BIEN FORMATEADO
+📍 *Ubicación:*
+CP: ${cp}
+Dirección: ${direccion}
+
+👤 *Datos del cliente:*
+Nombre: ${nombre}
+
+💧 *Consumo estimado:*
+${consumo} garrafones por semana
+
+📅 *Frecuencia deseada:*
+${frecuencia}
+
+Me gustaría conocer la viabilidad de apertura de ruta en mi zona.`;
+
+  const url = `https://wa.me/525554144400?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
+});
+
+  
   const mensaje = `Hola, me interesa abrir cobertura en mi zona:
 
 👤 Nombre: ${nombre}
