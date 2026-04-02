@@ -111,3 +111,9 @@
 .btn-cta:hover {
   transform: scale(1.05);
 }
+
+.btn-cta.disabled {
+  background: #ccc;
+  pointer-events: none;
+  opacity: 0.6;
+}
