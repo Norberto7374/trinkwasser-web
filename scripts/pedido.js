@@ -46,10 +46,7 @@ ${direccion}
 Nombre: ${nombre}
 
 💧 *Detalle del pedido:*
-Producto: ${producto}
-Cantidad: ${cantidad}
-Garrafones: ${garrafones}
-Tipo: ${tipo}
+${listaProductos}
 
 ⏰ *Entrega:*
 Horario: ${horario}
@@ -58,7 +55,7 @@ Horario: ${horario}
 ${pago}
 
 Quedo atento a la confirmación de entrega.`;
-
+  
   const telefono = "5215670144747";
 
   // 🔥 CODIFICACIÓN CORRECTA
