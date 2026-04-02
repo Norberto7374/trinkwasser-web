@@ -30,3 +30,5 @@ const zonasActivas = [
   "53140",
   "02480"
 ];
+
+document.getElementById("cp").value = cp;
