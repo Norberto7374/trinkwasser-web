@@ -41,3 +41,12 @@ function generarMensajeZona(cp) {
 function generarMensajeNuevaZona(cp) {
   return `https://wa.me/525554144400?text=Hola,%20me%20interesa%20el%20servicio%20de%20agua%20Trinkwasser.%0A📍%20CP:%20${cp}%0A💧%20Consumo:%20____%0A🏢%20Tipo:%20casa%20o%20negocio%0AMe%20gustaría%20saber%20si%20pueden%20abrir%20ruta%20en%20mi%20zona`;
 }
+
+if (zonasActivas.includes(cp)) {
+  mensaje.innerText = "✅ Tenemos cobertura en tu zona";
+  btn.classList.remove("disabled");
+  btn.href = `pedido.html?cp=${cp}`;
+} else {
+  mensaje.innerText = "📍 Estamos abriendo cobertura en tu zona";
+  btn.classList.add("disabled"); // 👈 bloquea pedido
+}
