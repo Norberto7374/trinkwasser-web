@@ -1,3 +1,9 @@
+const mapaZonas = {
+  "54080": "Tlalnepantla Estado de Mexico",
+  "53140": "Naucalpan Estado de Mexico",
+  "02480": "Azcapotzalco Ciudad de Mexico"
+};
+
 const zonasActivas = ["54080", "53140", "02480"];
 
 const cpInput = document.getElementById("cp");
