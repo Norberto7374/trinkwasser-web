@@ -35,23 +35,12 @@ ${frecuencia}
 
 Me gustaría conocer la viabilidad de apertura de ruta en mi zona.`;
 
-  const url = `https://wa.me/525554144400?text=${encodeURIComponent(mensaje)}`;
-
-  window.open(url, "_blank");
-});
-
-  
-  const mensaje = `Hola, me interesa abrir cobertura en mi zona:
-
-👤 Nombre: ${nombre}
-📍 Dirección: ${direccion}
-💧 Consumo estimado: ${consumo} garrafones por semana
-📅 Frecuencia: ${frecuencia}`;
-
   // 🔥 CODIFICACIÓN CLAVE
   const mensajeCodificado = encodeURIComponent(mensaje);
-
+  
   const url = `https://wa.me/5215670144747?text=${mensajeCodificado}`;
 
   window.open(url, "_blank");
 });
+
+
