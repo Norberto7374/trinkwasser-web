@@ -1,3 +1,11 @@
+const params = new URLSearchParams(window.location.search);
+const cp = params.get("cp");
+
+if (cp) {
+  const direccion = document.getElementById("direccion");
+  direccion.value = `CP ${cp}`;
+}
+
 document.getElementById("pedidoForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -24,6 +32,8 @@ Pago: ${pago}`;
 
   window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
 });
+
+
 
 const zonasActivas = [
   "54080",
