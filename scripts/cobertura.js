@@ -31,6 +31,7 @@ inputCP.addEventListener("input", () => {
       btn.href = `pedido.html?cp=${cp}`;
       btn.classList.remove("disabled");
       btn.classList.remove("btn-expansion");
+      btn.innerHTML = `<i class="fa-solid fa-truck"></i> Solicitar entrega programada`;
 
     } else {
 
@@ -41,7 +42,8 @@ inputCP.addEventListener("input", () => {
       btn.href = `expansion.html?cp=${cp}`;
       btn.classList.remove("disabled");
       btn.classList.add("btn-expansion");
-
+      btn.innerHTML = `<i class="fa-solid fa-location-dot"></i> Solicitar servicio en mi zona`;
+      
     }
 
   } else {
