@@ -35,7 +35,7 @@ inputCP.addEventListener("input", () => {
     } else {
 
       // 🔥 FUERA DE ZONA
-      mensaje.textContent = "📍 Podemos abrir cobertura en tu zona";
+      mensaje.textContent = "📍 Analizaremos abrir cobertura en tu zona";
 
       btn.textContent = "📍 Solicitar servicio en mi zona";
       btn.href = `expansion.html?cp=${cp}`;
