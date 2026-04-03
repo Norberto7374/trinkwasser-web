@@ -70,14 +70,14 @@
 
   if (zonasActivas.includes(cp)) {
 
-  // ✅ ZONA ACTIVA
+  <!-- ✅ ZONA ACTIVA -->
   btn.textContent = "📅 Solicitar entrega programada";
   btn.href = `pedido.html?cp=${cp}`;
   btn.classList.remove("disabled");
 
   } else {
 
-  // 🔥 FUERA DE ZONA
+  <!-- 🔥 FUERA DE ZONA -->
   btn.textContent = "📍 Solicitar servicio en mi zona";
   btn.href = `expansion.html?cp=${cp}`;
   btn.classList.remove("disabled");
