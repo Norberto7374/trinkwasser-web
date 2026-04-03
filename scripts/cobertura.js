@@ -1,3 +1,5 @@
+const zonasActivas = ["54080", "53140", "02480"];
+
 const mapaZonas = {
   "54080": "Tlalnepantla Estado de Mexico",
   "53140": "Naucalpan Estado de Mexico",
