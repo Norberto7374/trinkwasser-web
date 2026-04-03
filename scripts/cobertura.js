@@ -1,49 +1,54 @@
-const zonasActivas = ["54080", "53140", "02480"];
-
 const mapaZonas = {
   "54080": "Tlalnepantla Estado de Mexico",
   "53140": "Naucalpan Estado de Mexico",
   "02480": "Azcapotzalco Ciudad de Mexico"
 };
 
-const cpInput = document.getElementById("cp");
+const inputCP = document.getElementById("cp");
 const mensaje = document.getElementById("mensaje-cp");
 const btn = document.getElementById("btn-agendar");
 const mapa = document.getElementById("mapa-frame"); 
 
-cpInput.addEventListener("input", () => {
-  const cp = cpInput.value.trim();
+
+inputCP.addEventListener("input", () => {
+  const cp = inputCP.value;
 
   // Reset
   btn.classList.add("disabled");
   btn.removeAttribute("href");
   mensaje.innerText = "";
-
-  if (cp.length !== 5 || isNaN(cp)) return;
-
-  // ✅ SI HAY COBERTURA
-  if (zonasActivas.includes(cp)) {
-
-    mensaje.innerText = "✅ Tenemos cobertura en tu zona";
-    mensaje.style.color = "green";
-
-    btn.classList.remove("disabled");
-    btn.href = `pedido.html?cp=${cp}`;
-
-    const ubicacion = mapaZonas[cp];
-    mapa.src = `https://www.google.com/maps?q=${encodeURIComponent(ubicacion)}&output=embed`;
-  } 
   
-  // 🟡 SI NO HAY COBERTURA
-  else {
+  if (cp.length === 5) {
 
-    mensaje.innerText = "📍 Podemos abrir cobertura en tu zona";
-    mensaje.style.color = "orange";
+    if (zonasActivas.includes(cp)) {
 
-    btn.classList.remove("disabled");
-    btn.href = `expansion.html?cp=${cp}`;
+      // ✅ ZONA ACTIVA
+      mensaje.textContent = "✅ Tenemos cobertura en tu zona";
+      
+      btn.textContent = "📅 Solicitar entrega programada";
+      btn.href = `pedido.html?cp=${cp}`;
+      btn.classList.remove("disabled");
+      btn.classList.remove("btn-expansion");
 
-    // 🔥 MAPA GENERAL
-    mapa.src = "https://www.google.com/maps?q=Estado%20de%20Mexico&output=embed";
+    } else {
+
+      // 🔥 FUERA DE ZONA
+      mensaje.textContent = "📍 Podemos abrir cobertura en tu zona";
+
+      btn.textContent = "📍 Solicitar servicio en mi zona";
+      btn.href = `expansion.html?cp=${cp}`;
+      btn.classList.remove("disabled");
+      btn.classList.add("btn-expansion");
+
+    }
+
+  } else {
+    // Estado inicial
+    mensaje.textContent = "";
+    btn.textContent = "📅 Validando cobertura...";
+    btn.classList.add("disabled");    
   }
+      // 🔥 MAPA GENERAL
+    mapa.src = "https://www.google.com/maps?q=Estado%20de%20Mexico&output=embed";
+
 });
