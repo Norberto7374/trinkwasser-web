@@ -12,7 +12,7 @@ const btn = document.getElementById("btn-agendar");
 const mapa = document.getElementById("mapa-frame"); 
 
 inputCP.addEventListener("input", () => {
-  const cp = inputCP.value;
+  const cp = inputCP.value.trim();
 
   // Reset
   btn.classList.add("disabled");
