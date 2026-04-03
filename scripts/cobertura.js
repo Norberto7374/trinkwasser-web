@@ -51,6 +51,9 @@ inputCP.addEventListener("input", () => {
     btn.classList.add("disabled");    
   }
       // 🔥 MAPA GENERAL
+  if (mapaZonas[cp]) {
+    mapa.src = `https://www.google.com/maps?q=${encodeURIComponent(mapaZonas[cp])}&output=embed`;
+  } else {
     mapa.src = "https://www.google.com/maps?q=Estado%20de%20Mexico&output=embed";
-
+  }
 });
