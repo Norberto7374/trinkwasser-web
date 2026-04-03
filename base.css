@@ -7,6 +7,10 @@ body {
   padding-bottom: 140px;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 /* Contenedor principal */
 .container {
   width: 90%;
