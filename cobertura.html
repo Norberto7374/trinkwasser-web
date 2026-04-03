@@ -64,24 +64,9 @@
   <input type="text" id="cp" placeholder="Ingresa tu código postal" maxlength="5">
 
   <p id="mensaje-cp"></p>
-
- 
-  const btn = document.getElementById("btn-agendar");
-
-  if (zonasActivas.includes(cp)) {
-
-  <!-- ✅ ZONA ACTIVA -->
-  btn.textContent = "📅 Solicitar entrega programada";
-  btn.href = `pedido.html?cp=${cp}`;
-  btn.classList.remove("disabled");
-
-  } else {
-
-  <!-- 🔥 FUERA DE ZONA -->
-  btn.textContent = "📍 Solicitar servicio en mi zona";
-  btn.href = `expansion.html?cp=${cp}`;
-  btn.classList.remove("disabled");
-  }
+  <a id="btn-agendar" class="btn-cta disabled">
+  📅 Validando cobertura...
+  </a>
   
 </section>
 
