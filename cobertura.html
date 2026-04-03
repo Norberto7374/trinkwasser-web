@@ -65,11 +65,24 @@
 
   <p id="mensaje-cp"></p>
 
-  <a id="btn-agendar" class="btn-cta disabled" target="_blank">
-    <i class="fa-solid fa-calendar-check"></i>
-    Solicitar entrega programada
-  </a>
+ 
+  const btn = document.getElementById("btn-agendar");
 
+  if (zonasActivas.includes(cp)) {
+
+  // ✅ ZONA ACTIVA
+  btn.textContent = "📅 Solicitar entrega programada";
+  btn.href = `pedido.html?cp=${cp}`;
+  btn.classList.remove("disabled");
+
+  } else {
+
+  // 🔥 FUERA DE ZONA
+  btn.textContent = "📍 Solicitar servicio en mi zona";
+  btn.href = `expansion.html?cp=${cp}`;
+  btn.classList.remove("disabled");
+  }
+  
 </section>
 
 <!-- BOTÓN HOME -->
