@@ -5,18 +5,14 @@
   text-align: center;
   text-decoration: none;
   color: #0b2a4a;
+  font-size: 32px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
 }
 
-.menu-item i {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
-
 .menu-item span {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -37,19 +33,6 @@
   .menu-app {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.menu-item {
-  font-size: 32px;
-}
-
-.menu-item span {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.menu-item:hover {
-  transform: translateY(-5px);
 }
 
 .logo {
