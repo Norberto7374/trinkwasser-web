@@ -10,6 +10,10 @@ if (cp) {
   direccionInput.value = `CP ${cp}`;
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("agregar-producto").click();
+});
+
 // ============================
 // ENVÍO A WHATSAPP
 // ============================
