@@ -25,9 +25,11 @@ let listaProductos = "";
 productos.forEach(item => {
   const producto = item.querySelector(".producto").value;
   const cantidad = item.querySelector(".cantidad").value;
+  const marca = item.querySelector(".marca").value;
+  const tipoOperacion = item.querySelector(".tipo-operacion").value;
 
   if (cantidad && cantidad > 0) {
-    listaProductos += `• ${producto}: ${cantidad}\n`;
+    listaProductos += `• ${producto} | ${cantidad} pzas | ${marca} | ${tipoOperacion}\n`;
   }
 });
   
