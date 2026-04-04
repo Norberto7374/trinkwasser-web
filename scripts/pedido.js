@@ -37,8 +37,6 @@ productos.forEach(item => {
   }
 });
   
-  const garrafones = document.getElementById("garrafones").value;
-  const tipo = document.getElementById("tipo").value;
   const horario = document.getElementById("horario").value;
   const pago = document.getElementById("pago").value;
 
