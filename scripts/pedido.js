@@ -26,12 +26,7 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
 
 let listaProductos = "";
 
-productos.forEach(item => {
-if (listaProductos === "") {
-  alert("Agrega al menos un producto");
-  return;
-}
-  
+productos.forEach(item => {  
   const producto = item.querySelector(".producto").value;
   const cantidad = item.querySelector(".cantidad").value;
   const marca = item.querySelector(".marca").value;
@@ -41,6 +36,10 @@ if (listaProductos === "") {
     listaProductos += `• ${cantidad} x ${producto} (${marca} - ${tipoOperacion})\n`;
   }
 });
+if (listaProductos === "") {
+  alert("Agrega al menos un producto");
+  return;
+}
   
   const horario = document.getElementById("horario").value;
   const pago = document.getElementById("pago").value;
