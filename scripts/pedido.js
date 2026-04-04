@@ -29,7 +29,7 @@ productos.forEach(item => {
   const tipoOperacion = item.querySelector(".tipo-operacion").value;
 
   if (cantidad && cantidad > 0) {
-    listaProductos += `• ${producto} | ${cantidad} pzas | ${marca} | ${tipoOperacion}\n`;
+    listaProductos += `• ${cantidad} x ${producto} (${marca} - ${tipoOperacion})\n`;
   }
 });
   
