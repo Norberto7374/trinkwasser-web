@@ -29,37 +29,40 @@
     <label>Dirección</label>
     <input type="text" id="direccion" required>
 
-<div id="productos-container">
+nuevo.innerHTML = `
+  <div class="producto-row">
 
-  <div class="producto-item">
     <select class="producto">
-      <option>Garrafón 20L</option>
-      <option>Garrafón 10L</option>
+      <option value="Garrafón 20L">Garrafón 20L</option>
+      <option value="Garrafón 10L">Garrafón 10L</option>
     </select>
 
-    <input type="number" class="cantidad" placeholder="Cantidad">
-  </div>
+    <input 
+      type="number" 
+      class="cantidad" 
+      placeholder="Cantidad"
+      min="1"
+    >
 
-</div>
+    <select class="marca">
+      <option value="Genérico">Genérico</option>
+      <option value="Ciel">Ciel</option>
+      <option value="Bonafont">Bonafont</option>
+      <option value="Epura">Epura</option>
+    </select>
+
+    <select class="tipo-operacion">
+      <option value="Propio">Propio</option>
+      <option value="Préstamo">Préstamo</option>
+      <option value="Compra">Compra</option>
+    </select>
+
+  </div>
+`;
 
 <button type="button" id="agregar-producto" class="btn-secundario">
   ➕ Agregar otro producto
 </button>
-    
-    <label>¿Cuenta con garrafones?</label>
-    <select id="garrafones">
-      <option>Propios</option>
-      <option>Préstamo</option>
-      <option>Compra</option>
-    </select>
-
-    <label>Tipo de garrafón</label>
-    <select id="tipo">
-      <option>Epura</option>
-      <option>Ciel</option>
-      <option>Bonafont</option>
-      <option>Genérico</option>
-    </select>
 
     <label>Horario de entrega</label>
     <select id="horario">
