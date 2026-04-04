@@ -63,16 +63,23 @@ document.addEventListener("DOMContentLoaded", () => {
     let listaProductos = "";
 
     productos.forEach(item => {
-      const producto = item.querySelector(".producto").value;
-      const cantidad = item.querySelector(".cantidad").value;
-      const marca = item.querySelector(".marca").value;
-      const tipoOperacion = item.querySelector(".tipo-operacion").value;
+      const productoEl = item.querySelector(".producto");
+      const cantidadEl = item.querySelector(".cantidad");
+      const marcaEl = item.querySelector(".marca");
+      const tipoEl = item.querySelector(".tipo-operacion");
+
+      if (!productoEl || !cantidadEl || !marcaEl || !tipoEl) return;
+
+      const producto = productoEl.value;
+      const cantidad = cantidadEl.value;
+      const marca = marcaEl.value;
+      const tipoOperacion = tipoEl.value;
 
       if (cantidad && cantidad > 0) {
         listaProductos += `• ${cantidad} x ${producto} (${marca} - ${tipoOperacion})\n`;
       }
     });
-
+    
     if (listaProductos === "") {
       alert("Agrega al menos un producto");
       return;
