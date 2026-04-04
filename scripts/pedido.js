@@ -22,7 +22,6 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
 
   const nombre = document.getElementById("nombre").value;
   const direccion = document.getElementById("direccion").value;
-  const productos = document.querySelectorAll(".producto-item");
 
 let listaProductos = "";
 
