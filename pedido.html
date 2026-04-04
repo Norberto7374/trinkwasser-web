@@ -29,37 +29,19 @@
     <label>Dirección</label>
     <input type="text" id="direccion" required>
 
-nuevo.innerHTML = `
-  <div class="producto-row">
+<div id="productos-container">
 
+  <div class="producto-item">
     <select class="producto">
-      <option value="Garrafón 20L">Garrafón 20L</option>
-      <option value="Garrafón 10L">Garrafón 10L</option>
+      <option>Garrafón 20L</option>
+      <option>Garrafón 10L</option>
     </select>
 
-    <input 
-      type="number" 
-      class="cantidad" 
-      placeholder="Cantidad"
-      min="1"
-    >
-
-    <select class="marca">
-      <option value="Genérico">Genérico</option>
-      <option value="Ciel">Ciel</option>
-      <option value="Bonafont">Bonafont</option>
-      <option value="Epura">Epura</option>
-    </select>
-
-    <select class="tipo-operacion">
-      <option value="Propio">Propio</option>
-      <option value="Préstamo">Préstamo</option>
-      <option value="Compra">Compra</option>
-    </select>
-
+    <input type="number" class="cantidad" placeholder="Cantidad">
   </div>
-`;
 
+</div>
+    
 <button type="button" id="agregar-producto" class="btn-secundario">
   ➕ Agregar otro producto
 </button>
