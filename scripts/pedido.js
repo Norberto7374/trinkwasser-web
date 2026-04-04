@@ -27,6 +27,11 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
 let listaProductos = "";
 
 productos.forEach(item => {
+if (listaProductos === "") {
+  alert("Agrega al menos un producto");
+  return;
+}
+  
   const producto = item.querySelector(".producto").value;
   const cantidad = item.querySelector(".cantidad").value;
   const marca = item.querySelector(".marca").value;
