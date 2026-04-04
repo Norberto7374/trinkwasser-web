@@ -72,12 +72,35 @@ document.getElementById("agregar-producto").addEventListener("click", () => {
   nuevo.classList.add("producto-item");
 
   nuevo.innerHTML = `
+  <div class="producto-row">
+
     <select class="producto">
-      <option>Garrafón 20L</option>
-      <option>Garrafón 10L</option>
+      <option value="Garrafón 20L">Garrafón 20L</option>
+      <option value="Garrafón 10L">Garrafón 10L</option>
     </select>
-    <input type="number" class="cantidad" placeholder="Cantidad">
-  `;
+
+    <input 
+      type="number" 
+      class="cantidad" 
+      placeholder="Cantidad"
+      min="1"
+    >
+
+    <select class="marca">
+      <option value="Genérico">Genérico</option>
+      <option value="Ciel">Ciel</option>
+      <option value="Bonafont">Bonafont</option>
+      <option value="Epura">Epura</option>
+    </select>
+
+    <select class="tipo-operacion">
+      <option value="Propio">Propio</option>
+      <option value="Préstamo">Préstamo</option>
+      <option value="Compra">Compra</option>
+    </select>
+
+  </div>
+`;
 
   container.appendChild(nuevo);
 });
