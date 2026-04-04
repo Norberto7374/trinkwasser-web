@@ -40,24 +40,26 @@ productos.forEach(item => {
 
   const pedidoID = "TW-" + Date.now().toString().slice(-6);
   // 🔥 MENSAJE PROFESIONAL (MISMO ESTILO QUE EXPANSIÓN)
-  const mensaje = `Hola, quiero realizar un pedido de agua Trinkwasser.
+const mensaje = `🧾 *Pedido ${pedidoID}*
+
+Hola, quiero realizar un pedido de agua Trinkwasser.
 
 📍 *Ubicación:*
 ${direccion}
 
-👤 *Datos del cliente:*
-Nombre: ${nombre}
+👤 *Cliente:*
+${nombre}
 
 💧 *Detalle del pedido:*
 ${listaProductos}
 
-⏰ *Entrega:*
-Horario: ${horario}
+⏰ *Horario de entrega:*
+${horario}
 
 💳 *Forma de pago:*
 ${pago}
 
-Quedo atento a la confirmación de entrega.`;
+Quedo atento a la confirmación.`;
   
   const telefono = "5215670144747";
 
