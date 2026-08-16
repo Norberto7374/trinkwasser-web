@@ -30,7 +30,7 @@ inputCP.addEventListener("input", () => {
       btn.classList.remove("disabled");
       btn.classList.remove("btn-expansion");
 
-      btn.innerHTML = `<i class="fa-solid fa-truck"></i> Solicitar entrega programada`;
+      btn.innerHTML = `<i class="fa-brands fa-whatsapp"></i> Solicitar entrega programada`;
 
     } else {
 
