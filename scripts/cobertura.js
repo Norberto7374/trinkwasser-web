@@ -41,7 +41,7 @@ inputCP.addEventListener("input", () => {
       btn.classList.remove("disabled");
       btn.classList.add("btn-expansion");
 
-      btn.innerHTML = `<i class="fa-solid fa-location-dot"></i> Solicitar servicio en mi zona`;
+      btn.innerHTML = `<i class="fa-brands fa-whatsapp"></i> Solicitar servicio en mi zona`;
 
     }
 
